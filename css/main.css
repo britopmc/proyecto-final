@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+
+body {
+  font-family: "Roboto Condensed"; }
+
+.diseno {
+  background-position: right;
+  overflow: auto;
+  font-family: "Roboto Condensed";
+  font-size: 2rem; }
+
+@keyframes fondoAnimat {
+  0% {
+    background-image: url(../img/bground.jpg); }
+  50% {
+    background-image: url(../img/bground2.jpeg); }
+  100% {
+    background-image: url(../img/bground.jpg); } }
+
+body {
+  animation-name: fondoAnimat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.encabezado > img {
+  width: 100%; }
+
+.encabezado nav {
+  background-color: rgba(197, 110, 197, 0.603);
+  font-size: 1.8rem;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between; }
+  .encabezado nav a {
+    text-decoration: none; }
+  .encabezado nav ul li {
+    list-style: none; }
+    .encabezado nav ul li a:hover {
+      color: black;
+      font-weight: 600; }
+
+.tituloH1, h2 {
+  background: radial-gradient(circle, rgba(243, 7, 243, 0.685), rgba(197, 110, 197, 0.603));
+  font-family: "Bebas Neue";
+  font-size: 5rem;
+  text-align: center;
+  margin: 0rem 0rem 1.5rem 0rem; }
+
+.cuerpo {
+  padding: 1rem 1rem; }
+  .cuerpo section {
+    padding: 1rem 0; }
+  .cuerpo img {
+    width: 100%;
+    padding: 2rem 4rem; }
+
+.cajas {
+  border: solid 0.1rem;
+  background-color: white;
+  text-align: justify; }
+  .cajas p {
+    padding: 1rem; }
+
+.inactivo{
+  visibility: hidden;
+}
+
+.activo{
+  visibility: visible;
+}
+
+h2 {
+  font-family: "Roboto Condensed";
+  font-size: 2rem; }
+
+  .decoraFigures {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%; }
+    .decoraFigures figure {
+      background-color: white;
+      border: ridge;
+      border-radius: 1rem;
+      margin: 0.2rem;
+      padding: 1rem; }
+      .decoraFigures figure figcaption {
+        font-size: 1.5rem;
+        font-weight: bold; }
+      .decoraFigures figure img {
+        padding: 0rem; }
+      .decoraFigures figure:hover {
+        background-color: #051149;
+        color: inherit;
+        transition: 0.5s; }
+        .decoraFigures figure:hover figcaption {
+          color: white; }
+    @media only screen and (min-width: 768px) {
+      .decoraFigures {
+        max-width: 85%; } }
+    @media only screen and (min-width: 992px) {
+      .decoraFigures {
+        max-width: 100%; } }
+
+        
+.decoraCards div div {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+  .decoraCards div div:hover {
+    background-color: #051149;
+    color: aliceblue;
+    transition: 0.5s; }
+
+.formuCon {
+  padding: 1rem 1rem;
+  margin: 1rem 0rem;
+  width: 100%;
+  background-color: rgba(255, 199, 210, 0.7); }
+  .formuCon form div {
+    padding: 0.5rem 0rem; }
+  .formuCon #send {
+    padding: 1.8rem 0rem; }
+
+.decoraTablas {
+  background-color: white;
+  opacity: 100%;
+  text-align: center;
+  border: 5px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+  .decoraTablas thead tr th {
+    background-color: rgba(255, 199, 210, 0.7); }
+  .decoraTablas tbody tr td:hover {
+    background-color: #051149;
+    color: aliceblue;
+    transition: 0.5s; }
+
+.detalleProductos__sale {
+  text-decoration: line-through; }
+
+iframe {
+  margin: 0; }
+
+.divTurnos {
+  text-align: center;
+  justify-content: space-around;
+  font-size: 1.4rem; }
+
+.imgWh {
+  max-width: 50%; }
+
+.pie {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: whitesmoke; }
+
+.tituloPie {
+  width: 100%;
+  background-color: darkgoldenrod;
+  text-align: center; }
+
+.alinear {
+  align-items: center;
+  justify-content: space-around; }
+
+.rotador:hover {
+  transform: rotateZ(360deg);
+  transition: transform 2s; }

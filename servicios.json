@@ -1,0 +1,46 @@
+[{
+    "tipo": "depilacion",
+    "descripcion": "Depilacion con cera",
+    "imagen": "img/depilacion_cera.jpg"
+},
+{
+    "tipo": "depilacion",
+    "descripcion": "Depilacion con hilo",
+    "imagen": "img/depilacion_hilo.jpg"
+},
+{
+    "tipo": "depilacion",
+    "descripcion": "Depilacion con laser",
+    "imagen": "img/depilacion_laser.jpg"
+},
+{
+    "tipo": "masaje",
+    "descripcion": "Masaje Amma",
+    "imagen": "img/masaje_Amma.jpg"
+},
+{
+    "tipo": "masaje",
+    "descripcion": "Masaje GeoTermal",
+    "imagen": "img/masaje_geotermal.jpg"
+},
+{
+    "tipo": "masaje",
+    "descripcion": "Masaje Tui",
+    "imagen": "img/masaje_tui.jpg"
+},
+{
+    "tipo": "uñas",
+    "descripcion": "Uñas Ballerina",
+    "imagen": "img/unasBallerina.jpg"
+},
+{
+    "tipo": "uñas",
+    "descripcion": "Uñas Dip",
+    "imagen": "img/unasDip.jpg"
+},
+{
+    "tipo": "uñas",
+    "descripcion": "Uñas Porcelana",
+    "imagen": "img/unasPorcelana.jpg"
+}
+]
