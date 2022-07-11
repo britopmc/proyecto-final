@@ -14,7 +14,6 @@ function leer_servicios(){
     fetch('servicios.json')
     .then(res => res.json())
     .then(data => {
-        console.log(data)
 
         for(let cont=0 ; cont < data.length ; cont++){
 

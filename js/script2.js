@@ -57,16 +57,6 @@ class Producto{
 
 //3 DECLARACION DE FUNCIONES
 
-function leer_productos(){
-    stock_storage2=JSON.parse(localStorage.getItem("stock"))
-    fetch('productos.json')
-    .then(res => res.json())
-    .then(data => {
-        for(let cont=0 ; cont < data.length ; cont++){
-            productos.push(new Producto(data[cont].marca, data[cont].descri, data[cont].precio))
-        }
-    })
-}
 
 function ver_stock(){
 
@@ -88,12 +78,17 @@ function ver_stock_storage(){
     i=0;
     productos.length=0
 
-    if(stock_storage2.length){
+    if(stock_storage2){
         while(i<stock_storage2.length){
         
             productos.push(new Producto(stock_storage2[i].marca, stock_storage2[i].descripcion, stock_storage2[i].precio))
             i++
         }
+    }
+    else{
+
+        alerta_Fracaso("Aun no hay productos cargados")
+        
     }
     
 
@@ -150,6 +145,16 @@ function alerta_Exito(titulo, mensaje){
         title: titulo,
         text: mensaje,
         icon: "success",
+      });
+
+}
+
+function alerta_Fracaso(titulo, mensaje){
+
+    swal({
+        title: titulo,
+        text: mensaje,
+        icon: "error",
       });
 
 }
@@ -240,6 +245,3 @@ form_descripcion.addEventListener("keypress",(e)=>{
         probar_valores()
     }
 })
-
-
-leer_productos()
